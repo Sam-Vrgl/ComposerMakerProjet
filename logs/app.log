@@ -1,0 +1,6 @@
+[2023-11-26T19:12:32.941083+01:00] my_logger.INFO: I just got the logger [] []
+[2023-11-26T19:12:32.976339+01:00] my_logger.WARNING: I am warning you [] []
+[2023-11-26T19:12:32.976928+01:00] my_logger.ERROR: I am an error [] []
+[2023-11-26T19:12:32.977007+01:00] my_logger.CRITICAL: I am critical [] []
+[2023-11-26T19:12:32.977078+01:00] my_logger.ALERT: I am alerting you [] []
+[2023-11-26T19:12:32.977122+01:00] my_logger.EMERGENCY: I am in emergency [] []

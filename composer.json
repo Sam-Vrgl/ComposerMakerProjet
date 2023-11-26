@@ -14,5 +14,8 @@
     "require-dev": {
         "symfony/maker-bundle": "^1.51",
         "symfony/symfony": "*"
+    },
+    "require": {
+        "monolog/monolog": "^3.5"
     }
 }
