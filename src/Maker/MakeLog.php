@@ -9,6 +9,7 @@ use Symfony\Bundle\MakerBundle\Maker\AbstractMaker;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputArgument;
+use Symfony\Component\Console\Input\InputOption;
 
 class MakeLog extends AbstractMaker {
     public static function getCommandName(): string {
@@ -23,7 +24,9 @@ class MakeLog extends AbstractMaker {
             ->setName("make:log")
             ->setDescription($this->getCommandDescription())
             ->setHelp("This is a really helpful helper. I'm glad i can read this.")
-            ->addArgument('name', InputArgument::OPTIONAL, 'Choose a name for your logger (e.g. <fg=yellow>logger</>)');
+            ->addArgument('name', InputArgument::OPTIONAL, 'Choose a name for your logger (e.g. <fg=yellow>logger</>)')
+            // ->addOption('lang', null, InputOption::VALUE_REQUIRED, 'Choose a language for your logger (e.g. <fg=yellow>php</>)')
+            ;
     }
 
     public function configureDependencies(DependencyBuilder $dependencies) { }
